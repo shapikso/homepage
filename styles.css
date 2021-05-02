@@ -165,8 +165,6 @@
     background: #eee;
     font-size: 95%;
   }
-  
-  /* Prevent `sub` and `sup` elements from affecting the line height in all browsers */
   sub,
   sup {
     font-size: 75%;
@@ -180,61 +178,41 @@
   sup {
     top: -0.5em;
   }
-  
-  /* Remove the border on images inside links in IE 10 */
   img {
     border-style: none;
   }
-  
-  /* Change the font styles in all browsers, remove the margin in Firefox and Safari */
   button,
   input {
     font-family: inherit;
     font-size: 100%;
     line-height: 1.15;
     margin: 0;
-  
-    /* Show the overflow in IE and Edge */
     overflow: visible;
   }
-  
-  /* Remove the inheritance of text transform in Edge, Firefox, and IE */
   button {
     text-transform: none;
   }
-  
-  /* Correct the inability to style clickable types in iOS and Safari	*/
   button,
   [type="button"] {
     -webkit-appearance: button;
     appearance: button;
   }
-  
-  /* Remove the inner border and padding in Firefox	*/
   button::-moz-focus-inner,
   [type="button"]::-moz-focus-inner {
     border-style: none;
     padding: 0;
   }
-  
-  /* Restore the focus styles unset by the previous rule */
   button:-moz-focusring,
   [type="button"]:-moz-focusring {
     outline: 1px dotted ButtonText;
   }
-  
-  /* Add the correct box sizing in IE 10, remove the padding in IE 10 */
   [type="checkbox"] {
     box-sizing: border-box;
     padding: 0;
   }
-  
-  /* Utiltities */
   .nowrap {
     white-space: nowrap;
   }
-  
-  /* Article */
   article {
     max-width: 100%;
     margin-left: auto;
@@ -261,8 +239,6 @@
       margin-bottom: calc((100% - 1127px) / 2);
     }
   }
-  
-  /* Page */
   .page {
     position: relative;
     padding: 3em;
@@ -301,32 +277,17 @@
       display: none;
     }
   }
-  
-  /**
-   * # Semantic UI - 2.4.2
-   * https://github.com/Semantic-Org/Semantic-UI
-   * https://www.semantic-ui.com/
-   * Copyright 2014 Contributors
-   * Released under the MIT license
-   * https://opensource.org/licenses/MIT
-   */
   .grid {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: stretch;
     padding: 0;
-    /**
-     * Temporary hack to be sure avatar
-     * is rendered on print preview
-     */
     display: block !important;
   }
   .grid .grid {
     margin-left: -1em;
     margin-right: -1em;
   }
-  
-  /* Rows */
   .grid > .row {
     position: relative;
     display: flex;
@@ -339,9 +300,6 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
-  
-  /* Columns */
-  /* Standard 16 column */
   .grid > .column:not(.row),
   .grid > .row > .column {
     position: relative;
@@ -355,9 +313,6 @@
     padding-left: 1rem;
     padding-right: 1rem;
   }
-  
-  /* Columns */
-  /* Vertical padding when no rows */
   .grid > .column:not(.row) {
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -366,14 +321,10 @@
     margin-top: 0;
     margin-bottom: 0;
   }
-  
-  /* Assume full width with one column */
   .grid > .column:only-child,
   .grid > .row > .column:only-child {
     width: 100%;
   }
-  
-  /* Column Width */
   .grid > .row > [class*="one wide"].column,
   .grid > .column.row > [class*="one wide"].column,
   .grid > [class*="one wide"].column,
@@ -470,8 +421,6 @@
   .column.grid > [class*="sixteen wide"].column {
     width: 100% !important;
   }
-  
-  /* Center Aligned */
   [class*="center aligned"].grid > .column,
   [class*="center aligned"].grid > .row > .column,
   .grid > [class*="center aligned"].row > .column,
@@ -479,8 +428,6 @@
   .grid > .row > [class*="center aligned"].column.column {
     text-align: center;
   }
-  
-  /* Stackable */
   @media only screen and (max-width: 767px) {
     .stackable.grid > .row > .wide.column,
     .stackable.grid > .wide.column,
@@ -493,8 +440,6 @@
       padding: 1em !important;
     }
   }
-  
-  /* Mobile only column */
   [class*="mobile only"].grid,
   .grid > [class*="mobile only"].row,
   .grid > [class*="mobile only"].column,
@@ -509,8 +454,6 @@
       display: block;
     }
   }
-  
-  /* Avatar */
   .avatar-wrapper {
     padding: 0 1em;
     display: flex;
@@ -529,8 +472,6 @@
       padding: 0;
     }
   }
-  
-  /* Divider */
   .divider {
     border-top: 1px solid rgba(222, 222, 222, 1);
   }
@@ -538,14 +479,10 @@
     border-top: 0.3571428571428571em solid rgba(10, 10, 10, 1);
     width: 33%;
   }
-  
-  /* Language */
   .language {
     font-weight: 600;
     white-space: nowrap;
   }
-  
-  /* Labels */
   .labels > .label {
     background-color: #e8e8e8;
     border-radius: 0.28571429rem;
@@ -568,13 +505,9 @@
   .labels > .label:not(:last-child) {
     margin-right: 0.5em;
   }
-  
-  /* Job */
   .job {
     margin-bottom: 0.25rem;
   }
-  
-  /* Contacts */
   .contacts {
     list-style: none outside none;
     display: flex;
@@ -643,8 +576,6 @@
       flex-direction: column;
     }
   }
-  
-  /* Native <details> element styling */
   details {
     display: block;
   }
@@ -664,8 +595,6 @@
     clear: both;
     display: block;
   }
-  
-  /* Alternative to <details> compatible with Safari */
   .details > input {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -714,8 +643,6 @@
     clear: both;
     display: block;
   }
-  
-  /* Details as a standalone block */
   div.details > input:first-child {
     float: left;
   }
@@ -727,8 +654,6 @@
   div.details > input:first-child + label + .details-body {
     padding-left: 1.5em;
   }
-  
-  /* Details as a list item */
   li.details {
     list-style-type: none;
   }
@@ -739,15 +664,11 @@
     float: left;
     margin-left: -1.5em;
   }
-  
-  /* Highlighted list item */
   li.highlighted {
     padding: 0.5em;
     background: rgba(0, 0, 0, 0.04);
     border-radius: 4px;
   }
-  
-  /* Bordered list item */
   li.bordered {
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 4px;
@@ -765,8 +686,6 @@
     margin-left: -2em;
     margin-right: -0.5em;
   }
-  
-  /* Timeline */
   .timeline {
     list-style: none outside none;
     padding: 0;
@@ -784,8 +703,6 @@
   .timeline > li p {
     margin: 0;
   }
-  
-  /* Tags */
   .tags.small {
     font-size: 0.88em;
   }
@@ -796,8 +713,6 @@
     font-size: 1rem;
     margin: 0 0.25em 0 0.25em;
   }
-  
-  /* Print */
   @media print {
     .page,
     .page[style] {
@@ -821,8 +736,6 @@
       display: none;
     }
   }
-  
-  /* Color */
   .color {
     cursor: pointer;
     white-space: nowrap;
@@ -849,8 +762,6 @@
   .color.chartreuse::before {
     background-color: chartreuse;
   }
-  
-  /* Audio button */
   button.audio {
     cursor: pointer;
     background: inherit;
@@ -864,8 +775,6 @@
     width: 16px;
     vertical-align: text-top;
   }
-  
-  /* Resume */
   #resume {
     color: inherit;
     transition: 0.2s;
@@ -900,8 +809,6 @@
   #resume .dots .dot:not(:last-child) {
     margin-right: 0.2142857em;
   }
-  
-  /* Dialog */
   dialog {
     display: none;
     height: 100%;
@@ -937,8 +844,6 @@
   dialog:target ~ * {
     display: none;
   }
-  
-  /* Close */
   .close {
     text-indent: -9999px;
     position: absolute;
@@ -967,8 +872,6 @@
   .close::after {
     transform: rotate(-45deg);
   }
-  
-  /* Credits */
   .credits {
     text-align: right;
     padding: 0.5em;
@@ -984,8 +887,6 @@
       display: none;
     }
   }
-  
-  /* Hide header, reveal footer */
   header {
     position: fixed;
     z-index: 1;
